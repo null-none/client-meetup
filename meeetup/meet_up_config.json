@@ -1,0 +1,24 @@
+{
+  "get_group": {
+    "api_endpoint": "http://api.meetup.com/2/groups"
+  },
+  "get_event": {
+    "row_list": [
+      "country",
+      "city",
+      "created",
+      "rating",
+      "description",
+      "rating",
+      "join_mode",
+      "members",
+      "lon",
+      "lat",
+      "id",
+      "state",
+      "urlname"
+    ],
+    "insert_script": "INSERT into raw_meet_up_3 (country, city, created, rating, description, rating_2,join_mode, members, lon, lat, id, state,urlname) VALUES( %s )",
+    "api_endpoint": "http://api.meetup.com/2/open_events"
+  }
+}
